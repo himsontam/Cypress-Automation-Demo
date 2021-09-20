@@ -20,3 +20,7 @@ To Start this project, you need the following:
 1. install git (https://git-scm.com/)
 2. install node (https://nodejs.org/en/)
 
+## Clone the project from git
+1. clone: https://github.com/himsontam/YouLend-Cypress-Automation-Demo.git
+2. cd YouLend-Cypress-Automation-Demo
+3. install: npm install
