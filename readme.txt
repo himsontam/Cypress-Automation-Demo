@@ -46,3 +46,6 @@ There are few methods to run the tests in cypress
 ## Change Email address and password
 you can change your sign in or sign up email on the data.json file under fixtures folder.
 You may need to change it if your email is signed up already in http://a.testaddressbook.com/
+
+## Report & screenshot
+it will gerenate report if you run the tests with commandline, and it will automatly take screenshot if there is some cases fail.
