@@ -1,5 +1,5 @@
 ## Introduction
-This project is demo of the cypress automation tool for testing http://a.testaddressbook.com/ website. 
+This project is a demo of the cypress automation tool for testing http://a.testaddressbook.com/ website. 
 	
 ## Technologies
 Project is created with:
@@ -14,7 +14,7 @@ Project is created with:
     - mochawesome is a plugin for reporting.
     
 ## Setup
-To Start this project, you need the following:
+To start this project, you need the following:
 
 ## Install the following software:
 1. install git (https://git-scm.com/)
@@ -24,3 +24,21 @@ To Start this project, you need the following:
 1. clone: https://github.com/himsontam/YouLend-Cypress-Automation-Demo.git
 2. cd YouLend-Cypress-Automation-Demo
 3. install: npm install
+
+## Run the test
+There are few methods to run the tests in cypress
+1. you can open a cypress application by using the command: npm run cy: open, 
+   then you can run the test on the cypress UI by clicking the files under the integration section
+   or you can run all tests by clicking Run 2 integration test on the righthand corner
+
+2. you can run tests by using the command line, here is the command that you can use:
+    - npm run test 
+        -> for running all tests under the integration folder
+    - npm run cy: headless 
+        -> for running all tests under the integration folder in headless mode, which means it won't pop up any browser during the execution
+    - npm run cy:webtest 
+        -> for running specific QA_TEST_3.js test file
+    - npm run cy:apicalltest 
+        -> for running specific APICallTest.js
+    - npm run cy: chrome
+        -> for running all tests by using chrome specifically
