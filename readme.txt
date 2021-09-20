@@ -1,5 +1,5 @@
 ## Introduction
-This project is a demo of the cypress automation tool for testing http://a.testaddressbook.com/ website. 
+This project is a demo of the cypress automation tool for testing http://a.testaddressbook.com/ website and api test with https://reqres.in/ API. 
 	
 ## Technologies
 Project is created with:
@@ -37,9 +37,9 @@ There are few methods to run the tests in cypress
     - npm run cy: headless 
         -> for running all tests under the integration folder in headless mode, which means it won't pop up any browser during the execution
     - npm run cy:webtest 
-        -> for running specific QA_TEST_3.js test file
+        -> for running specific QA_TEST_3.js test file http://a.testaddressbook.com/
     - npm run cy:apicalltest 
-        -> for running specific APICallTest.js
+        -> for running specific APICallTest.js https://reqres.in/
     - npm run cy: chrome
         -> for running all tests by using chrome specifically
 
@@ -49,3 +49,6 @@ You may need to change it if your email is signed up already in http://a.testadd
 
 ## Report & screenshot
 it will generate a report if you run the tests with the command line, and it will automatically take a screenshot if there are some cases fail.
+
+## API Call test
+https://reqres.in/ is the API document used in APICallTest.js. It is a test for auto-testing the API call with cypress. 
