@@ -1,0 +1,19 @@
+{
+    "email": "velir91438_124@timevod.com",
+    "password": "123456",
+    "firstName": "Himson",
+    "lastName": "Tam",
+    "street_address": "222 Filton Ave",
+    "city": "Seattle",
+    "state": "WA",
+    "zipCode": "98133",
+    "color": "#ff0000",
+    "file": "butterfly.jpg",
+    "firstname2": "Wilson",
+    "zipCode2": "12345",
+    "updatedName" : "Himson Lok Him",
+    "addName" : " Lok Him",
+    "newState" : "IL",
+    "Empty_FirstName_Error_Msg":"First name can't be blank",
+    "Empty_ZipCode_Error_Msg":"Zip code can't be blank"
+}
