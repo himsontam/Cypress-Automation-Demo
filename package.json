@@ -4,7 +4,13 @@
   "description": "YouLend Interview QA test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy": "node_modules\\.bin\\cypress",
+    "cy:open": "npm run cy open",
+    "test": "npm run cy run -- -q --headed",
+    "cy:headless": "npm run cy run -- -q",
+    "cy:webtest": "npm run cy run -- --spec cypress\\integration\\YouLend_Interview_QA_Test\\QA_Test_3.js",
+    "cy:apicalltest": "npm run cy run -- --spec cypress\\integration\\YouLend_Interview_QA_Test\\APICallTest.js",
+    "cy:chrome": "npm run cy run -- --browser chrome --headed"
   },
   "author": "Himson",
   "license": "ISC",
