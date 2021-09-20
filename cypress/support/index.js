@@ -18,8 +18,11 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// plugin for checking table
 require('cypress-get-table')
 
+// for caught exception error on website
 Cypress.on('uncaught:exception', (err, runnable) => {
     // adding conditional expection handling
     if (err.message.includes('Popper is not defined')) {

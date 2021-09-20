@@ -24,11 +24,13 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-import 'cypress-file-upload';
+import 'cypress-file-upload'; // plugin for file upload feature
 import AddressBookPageObject from '../support/PageObject/AddressBookPageObject'
 
 const addressBookPageObject = new AddressBookPageObject();
 
+// custom function
+// sign up function
 Cypress.Commands.add('signUp', (email, password) => {
     addressBookPageObject.getSignUpRow().contains('Sign up').click()
     addressBookPageObject.getSignupEmailField().type(email)
@@ -36,6 +38,7 @@ Cypress.Commands.add('signUp', (email, password) => {
     addressBookPageObject.getSignUpSubmitButton().click()
 })
 
+// check email address after sign up
 Cypress.Commands.add('checkEmailAfterSignUp', (email) => {
     addressBookPageObject.getNavbarTextAfterSignup().should('have.text', email)
 })
@@ -44,24 +47,29 @@ Cypress.Commands.add('clickSignIn', () => {
     addressBookPageObject.getSignIn().click() // click signin button
 })
 
+//sign in function
 Cypress.Commands.add('signIn', (email, password) => {
     addressBookPageObject.getSignInEmailField().type(email) // input sign in email
     addressBookPageObject.getSignInPasswordField().type(password) // input sign in password
     addressBookPageObject.getSignInSubmitButton().click() //click sign in submit button
 })
 
+// click list function
 Cypress.Commands.add('clickListAfterSavedAddress', () => {
     addressBookPageObject.getListAfterSavedAddress().contains('List').click()
 })
 
+// click address 
 Cypress.Commands.add('clickAddress', () => {
     addressBookPageObject.getNavbarNavAddress().contains('Addresses').click()
 })
 
+// click new address
 Cypress.Commands.add('clickNewAddress', () => {
     addressBookPageObject.getNewAddress().contains('New Address').click()
 })
 
+// fill address data
 Cypress.Commands.add('fill_address_data', (data) => {
 
     addressBookPageObject.getAddressFirstName().type(data.firstName)
@@ -75,14 +83,17 @@ Cypress.Commands.add('fill_address_data', (data) => {
 
 })
 
+// click create address button
 Cypress.Commands.add('clickCreateAddressButton', () => {
     addressBookPageObject.getCreateAddressButton().click()
 })
 
+// click edit address
 Cypress.Commands.add('clickEditAddress', () => {
     addressBookPageObject.getEditAddress().last().contains('Edit').click()
 })
 
+// check address data
 Cypress.Commands.add('check_address_data', (data) => {
     addressBookPageObject.getAddressFirstName().should('have.value', data.firstName)
     addressBookPageObject.getAddressLastName().should('have.value', data.lastName)
@@ -94,23 +105,28 @@ Cypress.Commands.add('check_address_data', (data) => {
     addressBookPageObject.getFilePath().attachFile(data.file)
 })
 
+// update address data
 Cypress.Commands.add('update_address_data', (data) => {
     addressBookPageObject.getAddressFirstName().type(data.addName)
     addressBookPageObject.getState().select(data.newState).should('have.value', data.newState)
 })
 
+// click update address button
 Cypress.Commands.add('update_address_button_click', () => {
     addressBookPageObject.getUpdateAddressButton().click()
 })
 
+// check first name error msg
 Cypress.Commands.add('check_visibity_Empty_FirstName_Error_Msg', (data) => {
     cy.get('#error_explanation ul li').contains(data.Empty_FirstName_Error_Msg).should('be.visible')
 })
 
+//check zip code error msg
 Cypress.Commands.add('check_visibity_Empty_ZipCode_Error_Msg', (data) => {
     cy.get('#error_explanation ul li').contains(data.Empty_ZipCode_Error_Msg).should('be.visible')
 })
 
+// fill in address data without first name and zip code
 Cypress.Commands.add('fill_address_data_without_firstnameAndzipcode', (data) => {
 
     addressBookPageObject.getAddressFirstName().invoke('val', '')
@@ -122,16 +138,19 @@ Cypress.Commands.add('fill_address_data_without_firstnameAndzipcode', (data) => 
 
 })
 
+//check how many rows in that table
 Cypress.Commands.add('check_table_row_length', (expectedRowLength) => {
     addressBookPageObject.getAddressTableRow().should('have.length', expectedRowLength)
 })
 
+//fill in correct data
 Cypress.Commands.add('correct_the_address_error', (data) => {
 
     addressBookPageObject.getAddressFirstName().type(data.firstname2)
     addressBookPageObject.getZipCode().type(data.zipCode2)
 })
 
+//delete all items in a table
 Cypress.Commands.add('deleteEachItemsOntheTable', () => {
     addressBookPageObject.getAddressTableRow().then(listing => {
         const listingCount = Cypress.$(listing).length;
