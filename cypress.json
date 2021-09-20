@@ -1,0 +1,7 @@
+{
+    "reporter":"mochawesome",
+    "env" : {
+        "url" : "http://a.testaddressbook.com",
+        "apiURL": "https://reqres.in"
+    }
+}
