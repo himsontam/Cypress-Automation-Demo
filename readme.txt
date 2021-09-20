@@ -42,3 +42,7 @@ There are few methods to run the tests in cypress
         -> for running specific APICallTest.js
     - npm run cy: chrome
         -> for running all tests by using chrome specifically
+
+## Change Email address and password
+you can change your sign in or sign up email on the data.json file under fixtures folder.
+You may need to change it if your email is signed up already in http://a.testaddressbook.com/
