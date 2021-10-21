@@ -22,7 +22,7 @@ To start this project, you need the following:
 
 ## Clone the project from git
 1. clone: https://github.com/himsontam/YouLend-Cypress-Automation-Demo.git
-2. cd YouLend-Cypress-Automation-Demo
+2. cd Cypress-Automation-Demo
 3. install: npm install
 
 ## Run the test
