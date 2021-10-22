@@ -56,3 +56,6 @@ https://reqres.in/ is the API document used in APICallTest.js. It is a test for 
 
 ## Test from new branch
 Testing continue from new branch
+
+## Test2 from new branch
+Testing2 continue from new branch
