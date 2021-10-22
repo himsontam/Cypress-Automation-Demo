@@ -55,3 +55,6 @@ https://reqres.in/ is the API document used in APICallTest.js. It is a test for 
 
 b1
 b1-1
+b2
+
+b2-2
