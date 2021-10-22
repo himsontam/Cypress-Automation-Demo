@@ -62,5 +62,3 @@ Testing2 continue from new branch
 
 ## Test3 from new branch
 Testing3 continue from new branch
-
-##Delete branch
