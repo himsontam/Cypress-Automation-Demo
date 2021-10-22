@@ -67,7 +67,6 @@ Testing3 continue from new branch
 
 ## Merge 1-1 from new branch
 
-
 ## Merge 2 from new branch
 
 ## Merge 2-1 from new branch
