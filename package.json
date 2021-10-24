@@ -15,7 +15,7 @@
   "author": "Himson",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.5.0",
+    "cypress": "^8.6.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-get-table": "^1.0.1",
     "mocha": "^9.1.1",
