@@ -55,3 +55,4 @@ https://reqres.in/ is the API document used in APICallTest.js. It is a test for 
 
 
 test
+https://reqres.in/ is the API document used in APICallTest.js. It is a test for auto-testing the API call with cypress. 
