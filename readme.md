@@ -53,5 +53,5 @@ it will generate a report if you run the tests with the command line, and it wil
 ## API Call test
 https://reqres.in/ is the API document used in APICallTest.js. It is a test for auto-testing the API call with cypress. 
 
-# test-1
+#test-1
 #test-2
